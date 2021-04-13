@@ -3,14 +3,12 @@
  * @return {number[]}
  */
 var plusOne = function (digits) {
-  let newDigits = digits.map(a => {
-    if (digits.indexOf(a) === digits.length -1) {
-      return a + 1
-
-    } else {
-      return a
-    }
-  })
+  let joined = digits.join('')
+  let num = parseInt(joined, 10)
+  let newNum = num + 1
+  let numStr = newNum.toString()
+  let numArr = numStr.split('')
+  let newDigits = numArr.map(n => parseInt(n, 10))
 
   return newDigits
 };
