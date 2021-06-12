@@ -9,12 +9,12 @@ var twoSum = function (nums, target) {
   for (let i = 0; i<nums.length; i++) {
     obj[nums[i]] = i
     const num = nums[i]
-    const diff = target - num
+  }
 
-    if (obj[diff]) {
-      return obj.diff
-    }
+  const diff = target - num
 
+  if (obj[diff]) {
+    return [obj.diff, i]
 
   }
 };
