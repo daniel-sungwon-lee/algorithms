@@ -12,10 +12,10 @@ var twoSum = function (nums, target) {
   }
 
   for (let x =0; x<nums.length; x++) {
-    const diff = target - num
+    const diff = target - nums[x]
 
-    if (obj[diff]) {
-      return [obj.diff, i]
+    if (obj[diff] && obj[diff] !== x) {
+      return [x, obj[diff]]
 
     }
   }
